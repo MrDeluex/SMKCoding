@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.aboutUs {
+  margin-top: 100px;
+  display: flex;
+  justify-content: end;
+  position: relative;
+  background: rgb(240, 183, 133);
+}
+.aboutUs .bg-aboutUs {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/Images/bg-aboutus.png);
+  filter: sepia(50%);
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.aboutUs .bg-aboutUs .filter-bg {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.aboutUs .au-left {
+  z-index: 1;
+  height: auto;
+  width: 55%;
+  position: relative;
+}
+.aboutUs .au-left .au-img-border {
+  height: auto;
+  width: 330px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.205);
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.178);
+  padding: 7px;
+  position: absolute;
+  bottom: 65px;
+  right: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutUs .au-left .au-img-border img {
+  width: 100%;
+}
+.aboutUs .au-right {
+  z-index: 1;
+  max-width: 45%;
+  padding-block: 80px;
+}
+.aboutUs .au-right .au-title {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+.aboutUs .au-right .au-title .us {
+  position: relative;
+}
+.aboutUs .au-right .au-title .us .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #ff902a;
+  border-radius: 2px;
+}
+.aboutUs .au-right .au-subtitle {
+  font-size: 23px;
+  font-weight: 600;
+  width: 60%;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+.aboutUs .au-right .au-desc {
+  color: #7e7d7a;
+  letter-spacing: 1px;
+  font-size: 17px;
+  width: 77%;
+  margin-bottom: 30px;
+}
+.aboutUs .au-right .au-button {
+  font-weight: 500;
+  padding: 7px 30px;
+  border-radius: 25px;
+  border: none;
+  background: #2f2105;
+  color: #f4ae26;
+}
+
+.special-menu {
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+.special-menu .title {
+  font-weight: 600;
+  margin-left: 150px;
+  font-size: 30px;
+}
+.special-menu .title .fy {
+  padding-bottom: 1px;
+  position: relative;
+}
+.special-menu .title .fy .underline {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #ff902a;
+  border-radius: 2px;
+}
+.special-menu .sm-container-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: white;
+  width: 100%;
+  padding-inline: 150px;
+  box-sizing: border-box;
+}
+.special-menu .sm-container-card .card {
+  margin-top: 30px;
+  background-color: white;
+  box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  width: 330px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.special-menu .sm-container-card .card .img-card {
+  margin-block: 10px;
+  position: relative;
+}
+.special-menu .sm-container-card .card .img-card .rating-star {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  outline: solid 4px rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  width: 43px;
+  padding: 2px 8px;
+  margin: 10px 15px;
+}
+.special-menu .sm-container-card .card .img-card .rating-star p {
+  font-size: 15px;
+  font-weight: 700;
+}
+.special-menu .sm-container-card .card .img-card .rating-star img {
+  width: 15px;
+}
+.special-menu .sm-container-card .card .img-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.special-menu .sm-container-card .card .body-card .title-card {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 10px;
+}
+.special-menu .sm-container-card .card .body-card .title-card h1 {
+  color: #2f2105;
+  font-weight: 600;
+  margin: 0;
+  font-size: 23px;
+}
+.special-menu .sm-container-card .card .body-card .title-card .price {
+  font-weight: 700;
+}
+.special-menu .sm-container-card .card .body-card .desc-card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-inline: 10px;
+}
+.special-menu .sm-container-card .card .body-card .desc-card p {
+  color: #7e7d7a;
+  letter-spacing: 0.5px;
+  font-size: 13.5px;
+  font-weight: 600;
+  width: 170px;
+}
+.special-menu .sm-container-card .card .body-card .desc-card .sm-cart {
+  background-color: #ff902a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  font-size: 18px;
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */
